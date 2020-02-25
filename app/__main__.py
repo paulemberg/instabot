@@ -11,9 +11,9 @@ driver = webdriver.Chrome('/home/paulemberg/projects/chromedriver_linux64/chrome
 driver.get('https://www.instagram.com/accounts/login/?source=auth_switcher')
 time.sleep(5) # Let the user actually see something!
 search_box = driver.find_element_by_name('username')
-search_box.send_keys(data["user"])
+search_box.send_keys(data["Username"])
 search_box = driver.find_element_by_name('password')
-search_box.send_keys(data["password"])
+search_box.send_keys(data["Password"])
 
 search_box.submit()
 time.sleep(5) # Let the user actually see something!
