@@ -44,15 +44,20 @@ class runner:
         with smart_run(session):
             """ Activity flow """
             # general settings
-            session.set_dont_include(["friend1", "friend2", "friend3"])
+            #   session.set_dont_include(["friend1", "friend2", "friend3"])
       
             # activity
-            session.like_by_locations(locations_sao_paulo, amount=3)
-            session.like_by_tags(tags, amount=3)
+            #session.like_by_locations(locations_sao_paulo, amount=3)
+            #session.set_smart_hashtags(tags, limit=3, sort='top', log_tags=True)
+            #session.set_smart_location_hashtags(['567041712/brazil/', '112047398814697/sao-paulo-brazil/'], radius=20,
+             #                                   limit=3, log_tags=True)
+            #session.like_by_tags(amount=10, tags=tags, use_smart_location_hashtags=True, media='Photo')
+            #session.like_by_tags(tags, amount=3)
             # Joining Engagement Pods
-            session.set_do_comment(enabled=True, percentage=10)
-            session.set_comments(comments)
-            session.join_pods(topic='entertainment', engagement_mode='heavy')
+            #session.set_do_comment(enabled=True, percentage=10)
+            #session.set_comments(comments)
+            #session.join_pods(topic='entertainment', engagement_mode='heavy')
 
             #follow
-            session.follow_by_tags(tags, amount=5)
+            #session.follow_by_tags(tags, amount=5)
+            session.follow_by_locations(locations_sao_paulo, amount=5)
