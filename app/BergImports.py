@@ -59,5 +59,5 @@ class runner:
             #session.join_pods(topic='entertainment', engagement_mode='heavy')
 
             #follow
-            #session.follow_by_tags(tags, amount=5)
-            session.follow_by_locations(locations_sao_paulo, amount=5)
+            session.follow_by_tags(tags, amount=5)
+            #session.follow_by_locations(locations_sao_paulo, amount=5)
